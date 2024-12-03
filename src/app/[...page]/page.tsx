@@ -39,5 +39,10 @@ export default async function Page(props: PageProps) {
       </>
     );
   }
-  return <Content content={content} apiKey={PUBLIC_API_KEY} model="page" />;
+  return (
+    <div>
+      hello updated
+      <Content content={content} apiKey={PUBLIC_API_KEY} model="page" />
+    </div>
+  );
 }

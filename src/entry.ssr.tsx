@@ -16,6 +16,9 @@ import {
 } from "@builder.io/qwik/server";
 import { manifest } from "@qwik-client-manifest";
 import Root from "./root";
+import { initializeNodeRuntime } from "@builder.io/sdk-qwik/node/init";
+
+initializeNodeRuntime();
 
 export default function (opts: RenderToStreamOptions) {
   return renderToStream(<Root />, {

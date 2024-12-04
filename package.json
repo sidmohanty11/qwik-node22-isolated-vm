@@ -1,29 +1,36 @@
 {
-  "name": "app-dir",
-  "version": "0.1.0",
+  "name": "@builder.io/remix-template-gen2-sdk",
   "private": true,
-  "engines": {
-    "node": "22.x"
-  },
+  "sideEffects": false,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "remix vite:build",
+    "dev": "remix vite:dev",
+    "typecheck": "tsc"
   },
   "dependencies": {
-    "@builder.io/react": "5.0.11",
-    "@builder.io/sdk-react": "3.0.0",
-    "next": "14.1.1",
-    "react": "^18",
-    "react-dom": "^18"
+    "@builder.io/sdk-react": "^1.0.23",
+    "@remix-run/node": "^2.8.0",
+    "@remix-run/react": "^2.8.0",
+    "@remix-run/server-runtime": "^2.8.0",
+    "@vercel/analytics": "^1.2.2",
+    "@vercel/remix": "^2.8.0",
+    "isbot": "^4",
+    "node-fetch": "^3.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.16",
-    "typescript": "^5"
+    "@remix-run/dev": "^2.8.0",
+    "@remix-run/eslint-config": "^2.8.0",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "eslint": "^8.38.0",
+    "typescript": "^5.1.6",
+    "vite": "^5.1.0",
+    "vite-tsconfig-paths": "^4.2.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
   }
 }

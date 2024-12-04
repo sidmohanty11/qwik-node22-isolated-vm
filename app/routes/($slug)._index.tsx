@@ -44,5 +44,10 @@ export default function Page() {
   const { page } = useLoaderData<typeof loader>();
 
   // Render the page content from Builder.io
-  return <Content model="page" apiKey={apiKey} content={page as any} />;
+  return (
+    <div>
+      hello
+      <Content model="page" apiKey={apiKey} content={page as any} />
+    </div>
+  );
 }
